@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content-container">
+                <button type="button" id="menu">
+                    <img src="images/menu-bar.svg" alt="Menu">
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="Company">
+                </a>
+                <div class="input-group search-wrapper">
+                    <span class="input-group-text" id="basic-addon1"><img src="images/search-icon.svg"></span>
+                    <input type="search" class="form-control search-input" placeholder="Search" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="navbar-content-container">
+                <button class="notification-btn">
+                    <img src="images/notification-icon.svg" alt="Notification">
+                </button>
+                <div class="user">
+                    <div class="user-item user-profile-img">
+                        <img src="images/profile.png">
+                    </div>
+                    <button type="button" class="user-item user-name-btn">
+                        <span class="user-name">John Doe</span>
+                        <span class="down-icon ms-2">
+                            <img src="images/downward-arrow.svg">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex">
+        <section class="sidebar">
+            <div class="sidebar-content-wrapper">
+                <a href="#" class="sidebar-content-item active">
+                    <img src="images/dashboard-active.svg">
+                    <span class="content-title">Dashboard</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/graph-default.svg">
+                    <span class="content-title">Analysis</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/inbox-default.svg">
+                    <span class="content-title">Inbox</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/clock-default.svg">
+                    <span class="content-title">History</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/user-default.svg">
+                    <span class="content-title">Users</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/maintenance-default.svg">
+                    <span class="content-title">Maintenance</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/setting-default.svg">
+                    <span class="content-title">Setting</span>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>
