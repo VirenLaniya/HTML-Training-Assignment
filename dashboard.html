@@ -8,6 +8,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard-style.css">
 </head>
 
 <body>
@@ -48,11 +49,11 @@
     <main class="d-flex">
         <section class="sidebar">
             <div class="sidebar-content-wrapper">
-                <a href="#" class="sidebar-content-item active">
+                <a href="dashboard.html" class="sidebar-content-item active">
                     <img src="images/dashboard-active.svg">
                     <span class="content-title">Dashboard</span>
                 </a>
-                <a href="#" class="sidebar-content-item">
+                <a href="innerpage.html" class="sidebar-content-item">
                     <img src="images/graph-default.svg">
                     <span class="content-title">Analysis</span>
                 </a>
@@ -76,6 +77,175 @@
                     <img src="images/setting-default.svg">
                     <span class="content-title">Setting</span>
                 </a>
+            </div>
+        </section>
+        <section class="main-content">
+            <h1 class="main-title mb-30">Dashboard</h1>
+            <div class="dashboard-overview-container mb-30">
+                <div class="overview-item">
+                    <div class="item-image">
+                        <img src="images/star.svg">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-statistics">23,456</div>
+                        <div class="item-name">New Products</div>
+                    </div>
+                </div>
+                <div class="overview-item">
+                    <div class="item-image">
+                        <img src="images/new-product.svg">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-statistics">23,456</div>
+                        <div class="item-name">New Products</div>
+                    </div>
+                </div>
+                <div class="overview-item">
+                    <div class="item-image">
+                        <img src="images/total-product.svg">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-statistics">23,456</div>
+                        <div class="item-name">New Products</div>
+                    </div>
+                </div>
+                <div class="overview-item">
+                    <div class="item-image">
+                        <img src="images/dollar-filled.svg">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-statistics">23,456</div>
+                        <div class="item-name">New Products</div>
+                    </div>
+                </div>
+                <div class="overview-item">
+                    <div class="item-image">
+                        <img src="images/money-bag.svg">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-statistics">23,456</div>
+                        <div class="item-name">New Products</div>
+                    </div>
+                </div>
+            </div>
+            <div class="graph-statistics-container mb-30">
+                <div class="sale-graph">
+                    <div class="graph-info d-flex justify-content-between mb-4">
+                        <div class="field-title">Sale</div>
+                        <div class="graph-shownBy">
+                            <div class="graph-time">Weekly</div>
+                            <div class="graph-time">Monthly</div>
+                            <div class="graph-time current-graph">Yearly</div>
+                        </div>
+                    </div>
+                    <img src="images/data-graph.png">
+                </div>
+                <div class="sales-by-country">
+                    <div class="field-title">Sales by Country</div>
+                    <div class="graph-wrapper">
+                        <img src="images/pie-chart.svg">
+                    </div>
+                    <div class="color-define-container">
+                        <ul class="color-define-list row">
+                            <li class="usa">United States of America</li>
+                            <li class="canada">Canada</li>
+                            <li class="russia">Russia</li>
+                            <li class="india">India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="invoices-container">
+                <div class="invoice-header d-flex justify-content-between mb-30">
+                    <div class="field-title">Invoices</div>
+                    <button type="button" class="viewAll-btn">View All</button>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr class="table-header">
+                            <th scope="col">INVOICE</th>
+                            <th scope="col">COMPANY NAME</th>
+                            <th scope="col">EMAIL</th>
+                            <th scope="col">DUE DATE</th>
+                            <th scope="col">STATUS</th>
+                            <th scope="col">AMOUNT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><span class="badge paid">Paid</span></td>
+                            <td>$47,800</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Other</td>
+                            <td>jessica.hanson@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><span class="badge paid">Paid</span></td>
+                            <td>$98,000</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Vendor</td>
+                            <td>alma.lawson@example.com</td>
+                            <td>8 Sep, 2020</td>
+                            <td><span class="badge paid">Paid</span></td>
+                            <td>$20,900</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Property Management Company</td>
+                            <td>kenzi.lawson@example.com</td>
+                            <td>22 Oct, 2020</td>
+                            <td><span class="badge paid">Paid</span></td>
+                            <td>$10,570</td>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><span class="badge failed">Failed</span></td>
+                            <td>$47,800</td>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><span class="badge pending">Pending</span></td>
+                            <td>$47,800</td>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><span class="badge paid">Paid</span></td>
+                            <td>$47,800</td>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><span class="badge failed">Failed</span></td>
+                            <td>$47,800</td>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><span class="badge paid">Paid</span></td>
+                            <td>$47,800</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>

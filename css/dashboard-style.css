@@ -1,0 +1,205 @@
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.field-title {
+    font-size  : 22px;
+    font-weight: 600;
+}
+
+/******* Dashboard overview container *******/
+.dashboard-overview-container,
+.graph-statistics-container {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    column-gap     : 30px;
+    row-gap        : 30px;
+}
+
+.overview-item {
+    width           : 200px;
+    height          : 116px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    column-gap      : 12px;
+    background-color: #FFFFFF;
+    border-radius   : 5px;
+}
+
+.overview-item .item-image img {
+    width : 38px;
+    height: 38px;
+}
+
+.overview-item .item-content .item-statistics {
+    font-size  : 25px;
+    font-weight: 600;
+}
+
+.overview-item .item-content .item-name {
+    font-size: 15px;
+}
+
+
+/******* Graph statistics container *******/
+/*** Sale graph ***/
+.sale-graph {
+    width           : 100%;
+    max-width       : 768px;
+    padding         : 24px 29px;
+    background-color: #FFFFFF;
+    border-radius   : 5px;
+}
+
+.graph-shownBy {
+    display   : flex;
+    column-gap: 8px;
+}
+
+.graph-shownBy .graph-time {
+    font-size  : 12px;
+    margin-left: 8px;
+    color      : var(--light-font);
+}
+
+.graph-shownBy .current-graph {
+    color: var(--primary-clr);
+}
+
+.graph-shownBy .current-graph::after {
+    margin          : 4px 0;
+    content         : "";
+    display         : block;
+    height          : 2px;
+    background-color: var(--primary-clr);
+}
+
+.sale-graph img {
+    width     : 100%;
+    height    : 100%;
+    object-fit: contain;
+}
+
+/*** Sales by Country graph***/
+.sales-by-country {
+    padding         : 24px 29px;
+    width           : 100%;
+    border-radius   : 5px;
+    background-color: #FFFFFF;
+    width           : 100%;
+    max-width       : 380px;
+}
+
+.sales-by-country .graph-wrapper {
+    width          : 100%;
+    display        : flex;
+    justify-content: center;
+}
+
+.graph-wrapper img {
+    width     : 100%;
+    max-width : 246px;
+    object-fit: contain;
+}
+
+.color-define-container {
+    width: 100%;
+}
+
+/* Color define list */
+.color-define-list {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style           : none;
+    columns              : 2;
+    -webkit-columns      : 2;
+    -moz-columns         : 2;
+    padding-left         : 0;
+}
+
+.color-define-list li {
+    display      : flex;
+    align-items  : center;
+    column-gap   : 8px;
+    margin-bottom: 18px;
+    font-size    : 15px;
+}
+
+.color-define-list li::before {
+    content      : "";
+    display      : inline-block;
+    width        : 18px;
+    height       : 18px;
+    border-radius: 50%;
+}
+
+.color-define-list .usa {
+    grid-column: 1/3;
+}
+
+.color-define-list .russia {
+    grid-column: 1/3;
+}
+
+.color-define-list .usa::before {
+    background-color: #C8242F;
+}
+
+.color-define-list .canada::before {
+    background-color: #A2B86C;
+}
+
+.color-define-list .russia::before {
+    background-color: #F16C20;
+}
+
+.color-define-list .india::before {
+    background-color: #EBC844;
+}
+
+
+/******* Invoices container*******/
+.viewAll-btn {
+    border          : none;
+    color           : var(--primary-clr);
+    background-color: transparent;
+}
+
+.invoices-container {
+    padding         : 24px 30px;
+    background-color: #FFFFFF;
+    font-size       : 15px;
+    border-radius   : 5px;
+}
+
+.invoices-container .table .table-header {
+    color         : var(--light-font);
+    letter-spacing: 1.5px;
+    font-weight   : normal;
+}
+
+.invoices-container .table tr td {
+    font-size: 15px;
+}
+
+.invoices-container .table .badge {
+    font-size  : 15px;
+    font-weight: normal;
+}
+
+.invoices-container .table .paid {
+    color           : #3CDD5F;
+    background-color: #EBFFEF;
+}
+
+.invoices-container .table .failed {
+    color           : #FF4545;
+    background-color: #FFF5F5;
+}
+
+.invoices-container .table .pending {
+    color           : #BABABA;
+    background-color: #F8F8F8;
+}

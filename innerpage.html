@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/innerpage-style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content-container">
+                <button type="button" id="menu">
+                    <img src="images/menu-bar.svg" alt="Menu">
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="Company">
+                </a>
+                <div class="input-group search-wrapper">
+                    <span class="input-group-text" id="basic-addon1"><img src="images/search-icon.svg"></span>
+                    <input type="search" class="form-control search-input" placeholder="Search" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="navbar-content-container">
+                <button class="notification-btn">
+                    <img src="images/notification-icon.svg" alt="Notification">
+                </button>
+                <div class="user">
+                    <div class="user-item user-profile-img">
+                        <img src="images/profile.png">
+                    </div>
+                    <button type="button" class="user-item user-name-btn">
+                        <span class="user-name">John Doe</span>
+                        <span class="down-icon ms-2">
+                            <img src="images/downward-arrow.svg">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex">
+        <section class="sidebar">
+            <div class="sidebar-content-wrapper">
+                <a href="dashboard.html" class="sidebar-content-item">
+                    <img src="images/dashboard-default.svg">
+                    <span class="content-title">Dashboard</span>
+                </a>
+                <a href="innerpage.html" class="sidebar-content-item active">
+                    <img src="images/graph-active.svg">
+                    <span class="content-title">Analysis</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/inbox-default.svg">
+                    <span class="content-title">Inbox</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/clock-default.svg">
+                    <span class="content-title">History</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/user-default.svg">
+                    <span class="content-title">Users</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/maintenance-default.svg">
+                    <span class="content-title">Maintenance</span>
+                </a>
+                <a href="#" class="sidebar-content-item">
+                    <img src="images/setting-default.svg">
+                    <span class="content-title">Setting</span>
+                </a>
+            </div>
+        </section>
+        <section class="main-content">
+            <h1 class="main-title mb-30">Analysis</h1>
+            <div class="content-container">
+                <div class="container mb-5">
+                    <div class="field-title mb-3">One Column</div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="text" id="name" class="form-control input" placeholder="Name">
+                                <label for="name" class="floating-label">Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="input-container">
+                                <select class="form-select select">
+                                    <option selected>Dropdown</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="input-container">
+                                <textarea class="form-control textarea" rows="3" id="multiline"
+                                    placeholder="Multiline"></textarea>
+                                <label for="multiline" class="floating-label">Multiline</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="field-title mb-3">Two Column</div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="text" id="name" class="form-control input" placeholder="Name">
+                                <label for="name" class="floating-label">Name</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="text" id="uname" class="form-control input" placeholder="Username"
+                                    value="johndoe">
+                                <label for="uname" class="floating-label">Username</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="password" id="password" class="form-control input" placeholder="Password">
+                                <label for="password" class="floating-label">Password</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-container">
+                                <select class="form-select select">
+                                    <option selected>Dropdown</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="field-title mb-3">Three Column</div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="text" id="focus" class="form-control input" placeholder="Focus" autofocus>
+                                <label for="focus" class="floating-label">Focus</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="password" id="password" class="form-control input" placeholder="Password"
+                                    value="john@123">
+                                <label for="password" class="floating-label">Password</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="text" id="uname" class="form-control input" placeholder="Username"
+                                    value="johndoe" disabled>
+                                <label for="uname" class="floating-label">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="field-title mb-3">Four Column</div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="text" id="designation" class="form-control is-invalid input"
+                                    placeholder="Designation" value="UI Designer">
+                                <label for="designation" class="floating-label">Designation</label>
+                                <div class="invalid-feedback">Enter Valid data</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="text" id="fc-name" class="form-control input" placeholder="Designation">
+                                <label for="fc-name" class="floating-label">Name</label>
+                                <div class="input-info">Enter your full Name as per ID</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-container">
+                                <input type="text" id="fc-uname" class="form-control input" placeholder="Username"
+                                    value="johndoe">
+                                <label for="fc-uname" class="floating-label">Username</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-container">
+                                <select class="form-select select">
+                                    <option selected>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="field-title mb-3">Other Design Elements</div>
+                    <div class="row mb-4">
+                        <div class="row-title mb-3">File Upload</div>
+                        <div class="col">
+                            <div class="input-container file-upload-container">
+                                <label for="file-upload" class="file-upload-label">
+                                    <img src="images/cloud-upload-icon.svg">
+                                    <span>Upload</span>
+                                </label>
+                                <input type="file" id="file-upload" class="file-upload">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="row-title mb-3">Radio Button</div>
+                        <div class="col">
+                            <div class="input-container">
+                                <span class="me-5"><input type="radio" name="option" value="option1">Option 1</span>
+                                <span><input type="radio" name="option" value="option2" checked>Option 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="row-title mb-2">Checkbox</div>
+                        <div class="col">
+                            <div class="input-container">
+                                <span class="me-5"><input type="checkbox" name="option" value="option1">Option 1</span>
+                                <span><input type="checkbox" name="option" value="option2" checked>Option 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="row-title mb-3">Snackbar</div>
+                        <div class="row mb-2">
+                            <div class="col">
+                                <div class="alert alert-danger" role="alert">
+                                    <img src="images/error-icon.svg" class="snackbar-icon">
+                                    A simple primary alert—check it out!
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="alert alert-info" role="alert">
+                                    <img src="images/info-icon.svg" class="snackbar-icon">
+                                    A simple primary alert—check it out!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="alert alert-warning" role="alert">
+                                    <img src="images/warning-icon.svg" class="snackbar-icon">
+                                    A simple primary alert—check it out!
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="alert alert-success" role="alert">
+                                    <img src="images/success-icon.svg" class="snackbar-icon">
+                                    A simple primary alert—check it out!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="row-title mb-3">Call to action</div>
+                        <div class="col">
+                            <button type="button" class="primary-action me-3">Primary</button>
+                            <button type="button" class="secondary-action">Secondary</button>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="row-title mb-3">Tabs</div>
+                        <div class="col">
+                            <ul class="nav nav-tabs mb-4">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Tab 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tab 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tab 3</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto eligendi rem
+                                provident ullam ex laboriosam molestiae velit, similique quae, quo praesentium nobis
+                                aliquam, perferendis error. Accusamus, molestiae deleniti? Laboriosam quod totam
+                                officiis natus repellendus, veniam modi, earum ab in maiores deleniti ea, impedit animi
+                                nulla unde aspernatur dicta incidunt inventore aliquid soluta dolores! Iure molestiae
+                                soluta voluptates neque repellat magnam ab possimus eligendi incidunt dolore debitis
+                                quae, mollitia porro doloribus impedit sunt inventore odit nemo qui eos officia illo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>
