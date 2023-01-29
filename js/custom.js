@@ -8,3 +8,21 @@ menu.addEventListener('click', (e) => {
         sidebarContentTitle.classList.toggle('d-none');
     });
 });
+
+
+// Innerpage
+const navLinks = document.querySelectorAll('.nav-tabs .nav-link');
+const tabContents = document.querySelectorAll('.tab-content');
+
+for(let i=0; i<navLinks.length;i++){
+    navLinks[i].addEventListener('click', (e) => {
+        navLinks.forEach(navLink => {
+            navLink.classList.remove('active');
+        })
+        navLinks[i].classList.add('active');
+        tabContents.forEach(tabContent=>{
+            tabContent.classList.add('d-none');
+        });
+        tabContents[i].classList.remove('d-none');
+    })
+}
