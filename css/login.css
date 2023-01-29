@@ -123,3 +123,25 @@
     transition: 0.5s;
     color     : var(--secondary-clr);
 }
+
+@media(max-width: 992px) {
+    .login-wrapper {
+        position: relative;
+    }
+
+    .content {
+        height          : 100vh;
+        position        : absolute;
+        background-color: #fafafad0;
+    }
+}
+
+@media(max-width: 556px) {
+    .company-headline-row .company-headline {
+        font-size: 28px;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+}

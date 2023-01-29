@@ -14,6 +14,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.disabled {
+    transition: 0.5s;
+    filter    : blur(8px);
+}
+
 /******* Dashboard *******/
 header {
     position: sticky;
@@ -22,6 +27,7 @@ header {
 }
 
 .navbar {
+    position        : relative;
     padding-left    : 30px;
     padding-right   : 30px;
     height          : 80px;
@@ -64,8 +70,8 @@ header {
 }
 
 .input-group .search-input {
-    width : 250px;
-    border: none;
+    max-width: 250px;
+    border   : none;
 }
 
 .input-group .search-input:focus {
@@ -81,6 +87,10 @@ header {
 .notification-btn img {
     width : 24px;
     height: 24px;
+}
+
+.user {
+    cursor: pointer;
 }
 
 .user-profile-img img {
@@ -170,6 +180,7 @@ header {
     width           : 100%;
     min-height      : 100vh;
     background-color: var(--bg-clr);
+    overflow-x      : hidden;
 }
 
 .main-title {
@@ -177,10 +188,48 @@ header {
     font-size  : 30px;
 }
 
-@media(max-width:556px) {
+@media(max-width:767px) {
+
+    .navbar {
+        padding-left : 16px;
+        padding-right: 16px;
+    }
+
+    .navbar .navbar-content-container {
+        column-gap: 16px;
+    }
+
+    #basic-addon1 {
+        padding-left: 0;
+    }
+
+    #basic-addon1 img {
+        width : 24px;
+        height: 24px;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .user-name-btn {
+        display: none !important;
+    }
+
+    .sidebar {
+        padding: 16px 16px;
+    }
+
     .sidebar-hide {
         padding  : 0;
         width    : 0px;
         min-width: 0px;
     }
+
+    .side-search:focus {
+        border    : 1px solid var(--primary-clr);
+        box-shadow: 0 0 8px var(--primary-clr);
+    }
 }
+
+@media(max-width:556px) {}
