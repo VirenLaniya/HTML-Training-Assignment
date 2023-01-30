@@ -10,15 +10,14 @@
 /******* Dashboard overview container *******/
 .dashboard-overview-container,
 .graph-statistics-container {
-    display        : flex;
-    flex-wrap      : wrap;
-    justify-content: space-between;
-    column-gap     : 30px;
-    row-gap        : 30px;
+    display              : grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap           : 30px;
+    row-gap              : 30px;
 }
 
 .overview-item {
-    width           : 200px;
+    width           : 100%;
     height          : 116px;
     display         : flex;
     justify-content : center;
@@ -44,13 +43,19 @@
 
 
 /******* Graph statistics container *******/
+.graph-statistics-container {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap              : 30px;
+    column-gap           : 30px;
+}
+
 /*** Sale graph ***/
 .sale-graph {
-    width           : 100%;
-    max-width       : 768px;
     padding         : 24px 29px;
     background-color: #FFFFFF;
     border-radius   : 5px;
+    grid-column     : 1 / 3;
 }
 
 .graph-shownBy {
@@ -77,19 +82,18 @@
 }
 
 .sale-graph img {
-    width     : 100%;
-    height    : 100%;
-    object-fit: contain;
+    width: 100%;
 }
 
 /*** Sales by Country graph***/
 .sales-by-country {
     padding         : 24px 29px;
-    width           : 100%;
     border-radius   : 5px;
     background-color: #FFFFFF;
-    width           : 100%;
-    max-width       : 380px;
+    grid-column     : 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sales-by-country .graph-wrapper {
@@ -202,4 +206,45 @@
 .invoices-container .table .pending {
     color           : #BABABA;
     background-color: #F8F8F8;
+}
+
+@media(max-width:992px) {
+    .dashboard-overview-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap              : 16px;
+        column-gap           : 16px;
+    }
+
+    .graph-statistics-container {
+        grid-template-columns: auto;
+    }
+
+    .sale-graph {
+        grid-column: auto;
+    }
+
+    .sales-by-country {
+        grid-column: auto;
+    }
+
+    .table-container {
+        overflow-y: hidden;
+        overflow-x: auto !important;
+    }
+
+    .table {
+        min-width: 825px !important;
+    }
+}
+
+@media(max-width:556px) {
+    .overview-item {
+        height: 92px;
+    }
+
+    .sale-graph,
+    .sales-by-country,
+    .invoices-container {
+        padding: 16px;
+    }
 }

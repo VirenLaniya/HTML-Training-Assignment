@@ -18,6 +18,14 @@ const searchButton = document.getElementById('basic-addon1');
 const searchInput = document.querySelector('.search-input');
 const sideSearchContainer = document.querySelector('.side-search-container');
 const sideSearch = document.querySelector('.side-search-container .side-search');
+
+if (screen.width < 992) {
+    sidebar.classList.add('sidebar-hide');
+    sidebarContentTitles.forEach(sidebarContentTitle => {
+        sidebarContentTitle.classList.toggle('d-none');
+    });
+}
+
 if (screen.width < 768) {
     // Header - Navbar
     navBrand.src = 'images/mobile-header-logo.svg';
@@ -35,10 +43,10 @@ if (screen.width < 768) {
 
     // Side bar
     sideSearchContainer.classList.remove('d-none');
-    sidebar.classList.add('sidebar-hide');
-    sidebarContentTitles.forEach(sidebarContentTitle => {
-        sidebarContentTitle.classList.toggle('d-none');
-    });
+    // sidebar.classList.add('sidebar-hide');
+    // sidebarContentTitles.forEach(sidebarContentTitle => {
+    //     sidebarContentTitle.classList.toggle('d-none');
+    // });
 }
 
 // Innerpage

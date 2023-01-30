@@ -162,3 +162,9 @@ input[type='checkbox'] {
     color           : var(--primary-clr);
     border-radius   : 23px;
 }
+
+@media(max-width:556px) {
+    .main-content>.content-container {
+        padding: 16px 16px;
+    }
+}
